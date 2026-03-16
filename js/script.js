@@ -59,37 +59,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* ===== PANEL LATERAL ===== */
-const menuToggle = document.getElementById("menuToggle");
-const sidePanel = document.getElementById("sidePanel");
-const closePanel = document.getElementById("closePanel");
-const overlay = document.getElementById("overlay");
 
-function cerrarPanel() {
-  sidePanel.classList.remove("active");
-  overlay.classList.remove("active");
-  menuToggle.classList.remove("active");
-}
-
-if (menuToggle && sidePanel) {
-  menuToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    sidePanel.classList.add("active");
-    overlay.classList.add("active");
-    menuToggle.classList.add("active");
-  });
-}
-if (closePanel) closePanel.addEventListener("click", cerrarPanel);
-if (overlay) overlay.addEventListener("click", cerrarPanel);
-
-document.querySelectorAll(".side-content a").forEach((link) => {
-  link.addEventListener("click", cerrarPanel);
-});
-
-/* ===== CERRAR PANEL CON ESC ===== */
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") cerrarPanel();
-});
 
 /* ===== AJUSTE DINÁMICO NAVBAR ===== */
 function ajustarNavbar() {

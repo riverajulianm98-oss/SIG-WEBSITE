@@ -33,20 +33,10 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-white">
     <div class="container">
 
-        <!-- IZQUIERDA: HAMBURGUESA + LOGO -->
-        <div class="nav-left">
-
-            <button id="menuToggle" class="menu-toggle" type="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo.png" class="logo-navbar" alt="SIG Consultores">
-            </a>
-
-        </div>
+        <!-- IZQUIERDA: LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.png" class="logo-navbar" alt="SIG Consultores">
+        </a>
 
         <!-- MENÚ CENTRO -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -59,6 +49,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientes">Clientes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
@@ -75,44 +68,6 @@
 
     </div>
 </nav>
-
-<!-- PANEL LATERAL -->
-<div id="sidePanel" class="side-panel">
-
-    <div class="side-header">
-        <h4>Información SIG</h4>
-        <button id="closePanel" class="close-panel">✕</button>
-    </div>
-
-  <div class="side-content">
-
-    <a href="#nosotros">Quiénes somos</a>
-    <a href="clientes.html">Nuestros Clientes</a>
-    <a href="porque-elegirnos.html">¿Por qué elegirnos?</a>
-
-        <hr>
-
-        <h6>Normatividad</h6>
-
-<a href="docs/iso9001.pdf" target="_blank">
-<i class="bi bi-file-earmark-pdf"></i> ISO 9001
-</a>
-
-<a href="docs/iso14001.pdf" target="_blank">
-<i class="bi bi-file-earmark-pdf"></i> ISO 14001
-</a>
-
-<a href="docs/iso45001.pdf" target="_blank">
-<i class="bi bi-file-earmark-pdf"></i> ISO 45001
-</a>
-
-<a href="docs/iso39001.pdf" target="_blank">
-<i class="bi bi-file-earmark-pdf"></i> ISO 39001
-</a>
-
-    </div>
-
-</div>
 
 
 <!--  HERO  -->
@@ -256,6 +211,106 @@ Apoyamos a las organizaciones en el cumplimiento legal y la correcta implementac
   </div>
 </section>
 
+<!-- CLIENTES -->
+<section id="clientes" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Empresas que confían en nosotros</h2>
+      <p class="text-muted">
+        Durante años hemos acompañado a diferentes organizaciones en la implementación de Sistemas Integrados de Gestión.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente1.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente2.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente3.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente4.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente5.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 text-center">
+        <div class="cliente-box">
+          <img src="img/clientes/cliente6.png" class="img-fluid" alt="Cliente">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">¿Por qué elegir SIG Consultores y Asesores?</h2>
+      <p class="text-muted">
+        No solo implementamos sistemas de gestión, nos convertimos en el aliado estratégico de tu empresa.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded h-100">
+          <h5 class="fw-bold">✔ Evitas sanciones del Ministerio</h5>
+          <p>
+            Te ayudamos a cumplir el Decreto 1072 de 2015 y la Resolución 0312 de 2019. Preparamos tu empresa ante requerimientos, auditorías y visitas oficiales.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded h-100">
+          <h5 class="fw-bold">✔ Implementación real</h5>
+          <p>
+            No entregamos carpetas para archivar. Adaptamos el sistema a tu operación diaria para que tu personal realmente lo utilice.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded h-100">
+          <h5 class="fw-bold">✔ Acompañamiento permanente</h5>
+          <p>
+            Te acompañamos antes, durante y después de las auditorías. No quedas solo frente al Ministerio ni frente a la certificadora.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded h-100">
+          <h5 class="fw-bold">✔ Mejora organizacional</h5>
+          <p>
+            Organizamos procesos, reducimos riesgos laborales y mejoramos la productividad de tu empresa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACTO  -->
 <section id="contacto" class="contact-section container py-5">
 
@@ -278,7 +333,7 @@ Apoyamos a las organizaciones en el cumplimiento legal y la correcta implementac
         <p>Información y novedades</p>
     </a>
 
-    <a href="mailto:contacto@sigconsultores.com" class="contact-card email">
+    <a href="mailto:gerencia@sigcya.com" class="contact-card email">
         <div class="icon"><i class="bi bi-envelope-fill"></i></div>
         <h5>Correo</h5>
         <p>Solicitudes formales</p>
