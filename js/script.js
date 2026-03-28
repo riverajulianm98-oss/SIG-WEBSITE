@@ -61,6 +61,25 @@ window.addEventListener("scroll", () => {
 
 
 
+/* ===== PANEL LATERAL ===== */
+const menuToggle = document.getElementById("menuToggle");
+const sidePanel = document.getElementById("sidePanel");
+const closePanel = document.getElementById("closePanel");
+const overlay = document.getElementById("overlay");
+
+function closeSidePanel() {
+  sidePanel?.classList.remove("active");
+  overlay?.classList.remove("active");
+  menuToggle?.classList.remove("active");
+}
+menuToggle?.addEventListener("click", () => {
+  sidePanel?.classList.add("active");
+  overlay?.classList.add("active");
+  menuToggle?.classList.add("active");
+});
+closePanel?.addEventListener("click", closeSidePanel);
+overlay?.addEventListener("click", closeSidePanel);
+
 /* ===== AJUSTE DINÁMICO NAVBAR ===== */
 function ajustarNavbar() {
   document.documentElement.style.setProperty(
